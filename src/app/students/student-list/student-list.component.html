@@ -1,0 +1,25 @@
+<br/>
+<br/>
+<button class="btn btn-primary">
+	Add Student
+</button>
+<br/>
+<br/>
+
+<table class="table table-hover table-header">
+    <thead>
+        <tr>
+			<th>No</th>
+            <th>Name</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of Students; let i = index">
+            <td>{{i+1}}</td>
+			<td>{{student.Name}}</td>
+			<td>{{student.Address}}</td>
+        </tr>
+    </tbody>
+</table>
+
